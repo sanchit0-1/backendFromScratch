@@ -1,5 +1,5 @@
 # INTRODUCTION
-<p>I started my backend development journey using the MERN stack. Backend is the part of a web application that runs on the server and handles things like storing data, managing user authentication, and handling API requests. It works behind the scenes to power the frontend. As I begin, I am learning the basic concepts such as modules and packages.</p>
+I started my backend development journey using the MERN stack. Backend is the part of a web application that runs on the server and handles things like storing data, managing user authentication, and handling API requests. It works behind the scenes to power the frontend. As I begin, I am learning the basic concepts such as modules and packages.
 
 
 # What is node js ?
@@ -13,21 +13,37 @@ Listen on top of that we will learn what is module, packages, middleware, third 
 
 So, what are packages and modules? what makes it different?
 
-A MODULE is a single JavaScript file or a piece of code that performs a specific task or set of tasks. In Node.js, every .js file is treated as a module. You can create your own custom modules or use built-in ones like fs (file system), http, etc.
+## MODULES
+
+A *MODULE* is a single JavaScript file or a piece of code that performs a specific task or set of tasks. In Node.js, every .js file is treated as a module. You can create your own custom modules or use built-in ones like fs (file system), http, etc.
 example: 
 // math.js (custom module)
-function add(a, b) {
-  return a + b;
+*function add(a, b) {*
+  *return a + b;*
 }
-module.exports = add;
+*module.exports = add;*
 
 now we will be using this module in another file like :
 
-const add = require('./math');
-console.log(add(5, 3)); // Output: 8
+*const add = require('./math');*
+*console.log(add(5, 3)); // Output: 8*
 
-In such a way like http modules are present when we download node js. 
+In such a way like http modules are present when we download node js.
 
+# Packages
+A package is a collection of one or more modules bundled together, usually to provide specific functionality. Packages often come with a package.json file that contains metadata like the package name, version, dependencies, etc.
+You install packages using npm (Node Package Manager). Popular packages include:
+1. express (for building web servers)
+2. mongoose (for working with MongoDB)
+3. dotenv (for environment variables)
 
+# What is a Library?
+A library is a collection of reusable code that performs specific tasks. It is designed to be used by your code to solve particular problems or add features — like handling dates, making HTTP requests, or manipulating arrays.
+
+# NPM
+**NPM** stands for Node Package Manager. It is the default package manager for Node.js and is used to install, share, and manage packages (libraries or tools) in a Node.js project.
+When you build a backend application using Node.js, you often need to use external code libraries — like Express for routing, Mongoose for database interaction, or Dotenv for environment variables. npm helps you easily install and manage these libraries.
 
 Remember we will learn gradually to all stuffs !
+
+> Now we will try to make a server.

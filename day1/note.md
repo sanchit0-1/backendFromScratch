@@ -47,3 +47,5 @@ When you build a backend application using Node.js, you often need to use extern
 Remember we will learn gradually to all stuffs !
 
 > Now we will try to make a server.
+
+<pre>npm inti -y</pre>

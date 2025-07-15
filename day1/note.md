@@ -48,4 +48,6 @@ Remember we will learn gradually to all stuffs !
 
 > Now we will try to make a server.
 
-<pre>npm inti -y</pre>
+<pre>npm init -y</pre>
+- Now, after running this command there will be a package.json file. The package.json file is the manifest for a Node.js project. Think of it as your project's central config file — it contains metadata about your project and defines its dependencies, scripts, and much more.
+- now we will run a command to install express <pre>npm i express</pre> this is command to install express and to use express to make server. You will see that some extra files and folder will be there. 

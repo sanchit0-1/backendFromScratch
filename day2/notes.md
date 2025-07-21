@@ -21,4 +21,18 @@ there is inbuilt http module in node js but we are going to use express js packa
           console.log('Server is running on port 3000');
         })
 ```
+Express.js, on the other hand, is a framework built on top of the http module. It provides a much higher level of abstraction, making common tasks significantly easier and requiring less boilerplate code.
+3. ### Middleware Support
+Middleware is a key feature of Express.js. Middleware functions have access to the request object, the response object, and the next middleware function in the application's request-response cycle. They can perform tasks like:
+a. Authentication: Checking if a user is logged in.
+b. Logging: Logging details about incoming requests.
+c. Body Parsing: Automatically parsing JSON or form data from the request body.
+d.Error Handling: Creating a centralized error handling mechanism.
+## installing express
+
+
+### open your terminal and write following command one by one :
+`npm i express`
+     
+now make a file name server.js
 

@@ -5,9 +5,7 @@ app.use(express.json()) // here we have to use this middle ware to show data on 
 
 let notes = [];
 app.get('/about', (req,res)=>{
-    res.send(notes).json({
-        
-    })
+    res.json(notes)
 })
 
 app.post('/about', (req,res)=>{
@@ -18,7 +16,14 @@ app.post('/about', (req,res)=>{
 })
 
 
-
+// now we are making route to delete data form the server using DELETE method.
+app.delete('/notes/:index', (req,res) =>{ // here : says that there is going to be a dynamic value
+    const index = req.params.index
+    delete notes[index]
+    res.json({
+        message: "note deleted! "
+    })
+})
 
 
 

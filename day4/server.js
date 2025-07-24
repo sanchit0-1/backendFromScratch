@@ -25,7 +25,17 @@ app.delete('/notes/:index', (req,res) =>{ // here : says that there is going to 
     })
 })
 
+// new here we will update user data using PATCH method
+//here we will make a route of /notes/:index here index is dynamic
+app.patch('/notes/:index', (req,res)=>{
+    const index = req.params.index;
+    const {title} = req.body;
 
+    notes[index] = title;
+    res.json({
+        message: "updated"
+    })
+})
 
 
 

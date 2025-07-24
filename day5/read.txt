@@ -1,0 +1,1 @@
+Hello this is the way how to use mongodb atlas and how to connect to data base;

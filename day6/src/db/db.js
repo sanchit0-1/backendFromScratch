@@ -1,6 +1,7 @@
+require('dotenv').config()
 const mongoose = require('mongoose')
 function connectToDB(){
-    mongoose.connect("mongodb+srv://sancaoodb.net/sanchit")
+    mongoose.connect(process.env.MONGODB_URL)
     .then(() =>{
         console.log("connected to data base!");
     })

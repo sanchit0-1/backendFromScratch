@@ -13,13 +13,21 @@ D - delete
 */
 app.post('/notes', async (req,res)=>{
     const{title, content} = req.body
-    noteModel.create({
+     noteModel.create({
         title,content
     })
     
     res.json({
         message:"succesfullly",
         title,content
+    })
+})
+app.get('/notes', (req,res)=>{
+    const notes =  noteModel.find()
+
+    res.json({
+        message: "note found",
+        notes
     })
 })
 
